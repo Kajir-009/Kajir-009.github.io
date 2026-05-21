@@ -1,8 +1,8 @@
 import { defineCollection, reference } from "astro:content";
-import { z } from "astro/zod";
 import type { icons as lucideIcons } from "@iconify-json/lucide/icons.json";
 import type { icons as simpleIcons } from "@iconify-json/simple-icons/icons.json";
 import { file, glob } from "astro/loaders";
+import { z } from "astro/zod";
 
 const other = defineCollection({
 	loader: glob({ base: "src/content/other", pattern: "**/*.{md,mdx}" }),
