@@ -17,10 +17,13 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
 
+      - name: Setup Node.js 22       
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Install, build, and upload your site
         uses: withastro/action@v3
-        with:
-          node-version: 22   # 👈 esta es la única línea que faltaba
 
   deploy:
     needs: build
