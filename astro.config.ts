@@ -11,7 +11,7 @@ const {
 	GISCUS_EMIT_METADATA, GISCUS_LANG,
 } = loadEnv(process.env.NODE_ENV!, process.cwd(), "");
 export default defineConfig({
-	site: "https://Kajir009.github.io",
+	site: "https://Kajir-009.github.io",
 	output: "static",
 	integrations: [
 		expressiveCode({ themes: [spectreDark] }),
