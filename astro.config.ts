@@ -1,4 +1,5 @@
 import mdx from "@astrojs/mdx";
+import node from "@astrojs/node";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
@@ -7,44 +8,26 @@ import spectre, { type GiscusMapping } from "./package/src";
 import { spectreDark } from "./src/ec-theme";
 
 const {
-	GISCUS_REPO,
-	GISCUS_REPO_ID,
-	GISCUS_CATEGORY,
-	GISCUS_CATEGORY_ID,
-	GISCUS_MAPPING,
-	GISCUS_STRICT,
-	GISCUS_REACTIONS_ENABLED,
-	GISCUS_EMIT_METADATA,
-	GISCUS_LANG,
+	GISCUS_REPO, GISCUS_REPO_ID, GISCUS_CATEGORY, GISCUS_CATEGORY_ID,
+	GISCUS_MAPPING, GISCUS_STRICT, GISCUS_REACTIONS_ENABLED,
+	GISCUS_EMIT_METADATA, GISCUS_LANG,
 } = loadEnv(process.env.NODE_ENV!, process.cwd(), "");
 
-const config = defineConfig({
+export default defineConfig({
 	site: "https://Kajir009.github.io",
 	output: "static",
 	integrations: [
-		expressiveCode({
-			themes: [spectreDark],
-		}),
+		expressiveCode({ themes: [spectreDark] }),
 		mdx(),
 		sitemap(),
 		spectre({
 			name: "Spectre",
 			openGraph: {
-				home: {
-					title: "Spectre",
-					description: "A minimalistic theme for Astro.",
-				},
-				blog: {
-					title: "Blog",
-					description: "News and guides for Spectre.",
-				},
-				projects: {
-					title: "Projects",
-				},
+				home: { title: "Spectre", description: "A minimalistic theme for Astro." },
+				blog: { title: "Blog", description: "News and guides for Spectre." },
+				projects: { title: "Projects" },
 			},
 		}),
 	],
-	// ← adapter eliminado
+	adapter: node({ mode: "standalone" }),  // ← de vuelta
 });
-
-export default config;
