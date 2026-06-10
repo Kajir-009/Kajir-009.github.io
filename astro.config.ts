@@ -21,7 +21,7 @@ const {
 
 // https://astro.build/config
 const config = defineConfig({
-	site: "https://Kajir-009.github.io",
+	site: "https://Kajir009.github.io",
 	output: "static",
 	integrations: [
 		expressiveCode({
@@ -44,7 +44,7 @@ const config = defineConfig({
 					title: "Projects",
 				},
 			},
-			giscus: {
+			/*giscus: {
 				repository: GISCUS_REPO,
 				repositoryId: GISCUS_REPO_ID,
 				category: GISCUS_CATEGORY,
@@ -54,7 +54,7 @@ const config = defineConfig({
 				reactionsEnabled: GISCUS_REACTIONS_ENABLED === "true",
 				emitMetadata: GISCUS_EMIT_METADATA === "true",
 				lang: GISCUS_LANG,
-			},
+			},*/
 		}),
 	],
 	adapter: node({
