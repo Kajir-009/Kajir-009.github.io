@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"icon": {
-			"type": "lucide",
+			"type": "simple-icons",
 			"name": "github"
 		},
 		"text": "GitHub",
