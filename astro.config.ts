@@ -18,7 +18,7 @@ export default defineConfig({
 		mdx(),
 		sitemap(),
 		spectre({
-			name: "Spectre",
+			name: "Diego Reyes",
 			openGraph: {
 				home: { title: "Spectre", description: "A minimalistic theme for Astro." },
 				blog: { title: "Blog", description: "News and guides for Spectre." },
