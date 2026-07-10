@@ -21,7 +21,7 @@ export default defineConfig({
 			name: "Diego Reyes",
 			openGraph: {
 				home: { title: "General", description: "Mi Portafolio" },
-				3D models: { title: "3D Models", description: "Mi 3D models I have mede until now." },
+				blog: { title: "3D Models", description: "Mi 3D models I have mede until now." },
 				projects: { title: "Projects" },
 			},
 		}),
