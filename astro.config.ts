@@ -21,7 +21,7 @@ export default defineConfig({
 			name: "Kajir",
 			openGraph: {
 				home: { title: "Kajir", description: "Mi Portafolio" },
-				blog: { title: "3D Models", description: "Mi 3D models I have mede until now." },
+				3D Models: { title: "3D Models", description: "Mi 3D models I have mede until now." },
 				projects: { title: "Projects" },
 			},
 		}),
