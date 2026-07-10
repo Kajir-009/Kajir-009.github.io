@@ -18,10 +18,10 @@ export default defineConfig({
 		mdx(),
 		sitemap(),
 		spectre({
-			name: "General",
+			name: "Diego Reyes",
 			openGraph: {
-				home: { title: "Diego Reyes", description: "Mi Portafolio" },
-				blog: { title: "3D Models", description: "Mi 3D models I have mede until now." },
+				home: { title: "General", description: "Mi Portafolio" },
+				3D models: { title: "3D Models", description: "Mi 3D models I have mede until now." },
 				projects: { title: "Projects" },
 			},
 		}),
