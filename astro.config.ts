@@ -20,8 +20,8 @@ export default defineConfig({
 		spectre({
 			name: "Diego Reyes",
 			openGraph: {
-				home: { title: "Spectre", description: "A minimalistic theme for Astro." },
-				blog: { title: "Blog", description: "News and guides for Spectre." },
+				home: { title: "Kajir", description: "Mi Portafolio" },
+				blog: { title: "3D Models", description: "Mi 3D models I have mede until now." },
 				projects: { title: "Projects" },
 			},
 		}),
